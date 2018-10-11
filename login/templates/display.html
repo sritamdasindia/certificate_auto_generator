@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+  <head>
+    <meta  charset="utf-8"/>
+    <link rel="shortcut icon" href= "{% static 'logo.png'%}" />
+    <title>
+      Login
+  </title>
+  <link rel="stylesheet" href="{% static 'skeleton.css' %}" >
+  <link rel="stylesheet" href="{% static 'normalize.css' %}" >
+</head>
+<body>
+
+{%for img in imagelist%}
+    {{ img }}
+{%endfor%}
+</body>
+</html>

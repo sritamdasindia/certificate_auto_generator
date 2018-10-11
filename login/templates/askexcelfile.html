@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+  <head>
+    <meta  charset="utf-8"/>
+    <link rel="shortcut icon" href= "{% static 'logo.png'%}" />
+    <title>
+      Registration
+  </title>
+  <link rel="stylesheet" href="{% static 'skeleton.css' %}" >
+  <link rel="stylesheet" href="{% static 'normalize.css' %}" >
+</head>
+<body>
+<br>
+<br>
+<div align = 'center'>
+  <img src= "{% static 'logo.png'%}" alt="Italian Trulli" height="90" width="115">
+  <br>
+</html>
+<div align = 'center'>
+  <h5>welcome to the STUDENT registration</h5>
+  <div class = 'container' align = 'center'>
+
+    <form  method="post" id="form1" enctype="multipart/form-data"> {% csrf_token %}
+
+      <input type="button" id="file" class = "button button-primary" value= "Uplod Excel File" required style="margin-top:10px;" onclick="document.getElementById('studfile').click(); " /><br>
+      <input type="file" style="display:none;" id="studfile" name="studfile" accept=".csv" />
+      </script>
+
+      <input type = 'submit' class="button button-primary" style="margin-top:10px;"></input>
+
+</div>
+</body>
+</html>

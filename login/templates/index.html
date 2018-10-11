@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+  <head>
+    <meta  charset="utf-8"/>
+    <link rel="shortcut icon" href= "{% static 'logo.png'%}" />
+    <title>
+      Login
+  </title>
+  <link rel="stylesheet" href="{% static 'skeleton.css' %}" >
+  <link rel="stylesheet" href="{% static 'normalize.css' %}" >
+</head>
+<body>
+<br>
+<br>
+<div align = 'center'>
+  <img src= "{% static 'logo.png'%}" alt="Italian Trulli" height="90" width="115">
+  <br>
+</html>
+<div align = 'center'>
+  <h3>Welcome to LIT Auto Generated Certificate</h3>
+</div>
+<div class = 'container' align = 'center'>
+  <form  method="post" id="form1"> {% csrf_token %}
+
+    {% if error %}
+      <font color="red"> {{error}}</font> <br>
+    {%endif%}
+
+    <!-- Email ID      : <input type="text" id="email" name="email" placeholder="Email ID"style="margin-top:10px;" required><br> -->
+    User ID      : <input type="text" id="uid" name="uid" placeholder="User ID"style="margin-top:10px;" required><br>
+    Password    : <input type="password" id="password" name="password" placeholder="Password" style="margin-top:10px;"required/><br>
+
+    <input type="reset" value="Reset"/>
+    <input type="submit" class="button button-primary" id="submit" value="SUBMIT" style="margin-top:10px;">
+
+</form>
+
+</div>
+
+
+</select>
+</body>
+</html>
